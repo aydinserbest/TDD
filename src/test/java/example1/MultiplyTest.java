@@ -11,6 +11,47 @@ public class MultiplyTest {
         five.times(2);
         assertEquals(10, five.amount); }
 }
+
+    /*
+    The test method perfectly reflects the first step of the Test-Driven Development (TDD) approach.
+    In TDD, a test is written before any code is developed,
+    defining what the code should do and is expected to fail initially.
+    This failure occurs because the code necessary to pass the test has not yet been written.
+    When the above code snippet was written,
+    the Dollar class and the times method were not yet fully functional,
+    causing the test to fail initially.
+    This failure reveals any deficiencies or errors,
+    guiding how the code can be correctly completed in the future.
+
+    This scenario beautifully exemplifies one of the core principles of TDD:
+    "write the test first, then write the code."
+    The test defines the expected behavior and guides the developer
+    in writing the code that will achieve this behavior.
+     */
+    /*
+    The failure of the test clearly identifies the problem and provides developers
+    with a concrete path to develop the code in the right direction" can be approached
+    and understood as follows:
+
+    Identifying the Problem: When the testMultiplication() method fails,
+    it indicates that the Dollar class's times method does not function as expected.
+    Specifically, the failure shows that
+    the multiplication operation isn't correctly affecting the amount field of the Dollar class
+    or that the necessary components (like the method or class structure) might be missing or incorrect.
+    This failure directs attention to the specific part of the code that needs attention.
+    Providing a Concrete Path for Development: The failure gives a specific area
+    to focus on—ensuring that the times method correctly multiplies the amount value.
+    For developers, this is a clear indication that they need to implement
+    or correct the times method so that the amount reflects the expected result after multiplication.
+    This directs coding efforts efficiently, as developers now have a targeted task:
+    fix or properly implement multiplication to pass the test.
+    In summary, the initial test failure isn't just an indication of something wrong;
+    it acts as a guidepost, pointing out precisely what needs to be fixed
+    and steering the development process in a direction
+    that ensures the functionality aligns with the specified requirements.
+    This targeted approach reduces guesswork and enhances the efficiency of the development process
+    by focusing on rectifying specific failures detected through testing.
+     */
     /*
     1-The test's failure should be considered progress in the development process.
     Test failed; the expected result was '10' instead of '0'.
