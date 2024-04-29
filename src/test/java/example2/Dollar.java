@@ -72,4 +72,12 @@ public class Dollar {
     This transformation ensures that the class’s functionality
     is not limited to predefined values, maintaining its utility across various scenarios.
      */
+    /*
+    The "$5 * 2 = $10" example in the text illustrates this approach.
+    The author states that when a Dollar object's value is multiplied by two,
+    the expected result (10) should be achieved.
+    This test starts with a simple code snippet that isn't fully functional yet
+    (for example, missing the Dollar class).
+    However, it emphasizes that the test's failure (red bar) indicates progress in the development process.
+     */
 }
