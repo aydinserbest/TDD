@@ -31,6 +31,15 @@ and how this process makes design discussions more focused and concrete.
 
 reflecting the TDD strategies and improvements we made:
 
+    ###
+The "$5 * 2 = $10" example in the text illustrates this approach. 
+The author states that when a Dollar object's value is multiplied by two,
+the expected result (10) should be achieved.
+This test starts with a simple code snippet that isn't fully functional yet
+(for example, missing the Dollar class).
+However, it emphasizes that the test's failure (red bar) indicates progress in the development process.
+###
+
 Initial State and the "Fake It" Strategy
 Initially, the Dollar class was initialized with a constant amount value, and the times method didn’t perform any operation. 
 Our first test (testMultiplication) simply tested this constant value. 
