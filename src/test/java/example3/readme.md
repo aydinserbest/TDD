@@ -38,3 +38,18 @@ In summary, comparing two Dollar objects using the equals() method
 depends on their memory addresses unless the method is overridden. 
 However, when the equals() method is properly overridden, 
 the comparison is based on the data contained within the objects.
+
+###
+    In Java, the purpose of overriding the equals() method is to define a custom comparison structure 
+    that determines the equality of objects. This is especially important 
+    when you need to compare equality based on the values of your class. 
+    The basic equals() method from the Object class checks equality by comparing the memory addresses of objects, 
+    so for a value-based equality check, you need to override this method to fit your class.
+    How to Override the equals() Method
+    Overriding the equals() method for the Dollar class is done by checking the equality of the amount fields of the Dollar objects.
+    
+    Ensuring Correct Equality Comparison: The default equals() method in Java 
+    compares the references (memory addresses) of objects, meaning that if two objects don't point to the same memory location, 
+    the method returns false. However, we often want to compare objects based on their values. 
+    In the Dollar class, if two objects have the same amount values, we need to override the equals() method 
+    to recognize these objects as equal.
