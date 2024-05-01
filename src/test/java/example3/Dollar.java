@@ -39,6 +39,19 @@ public class Dollar {
     the Java compiler understands it refers to the field of the calling Dollar instance.
     dollar.amount: This refers to the amount field of the Dollar object casted and assigned to the dollar variable earlier.
 
+    The first amount: This refers to the amount field of the Dollar object that is calling the equals() method.
+    Even though it's not explicitly written as this.amount,
+    the Java compiler understands that this code is referencing the field of the calling Dollar instance.
+
+    dollar.amount: This refers to the amount field of the Dollar object that was cast from the object parameter.
+    In the previous line, Dollar dollar = (Dollar) object; casts the object parameter
+    to a Dollar object and assigns it to the dollar variable.
+    So, dollar.amount refers to the amount field of this newly casted Dollar object.
+    Summary:
+    The amount == dollar.amount; line compares the amount field of the calling Dollar instance (implicitly referenced)
+    with the amount field of the Dollar object assigned to the dollar variable from the object parameter.
+    This way, it checks if the amount values of these two Dollar objects are equal.
+
     3) return amount == dollar.amount;
 
     What is returned?:
