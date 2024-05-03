@@ -11,10 +11,10 @@ public class Dollar {
         return new Dollar(amount * multiplier);
     }
 
-    public boolean equals(Object object) {
-        Dollar dollar = (Dollar) object;
-        return amount == dollar.amount;
-    }
+//    public boolean equals(Object object) {
+//        Dollar dollar = (Dollar) object;
+//        return amount == dollar.amount;
+//    }
 }
     /*
     1) Dollar dollar = (Dollar) object;
