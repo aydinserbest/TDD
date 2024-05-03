@@ -30,8 +30,15 @@ how it became more "speaking" (expressive) and how it more clearly communicates 
 Analysis:
 
 This test tries to confirm that the Dollar class's times method changes the amount property.
-Before the five.times(3); call, five.amount was already 10 (after the first times(2) call). In the second call, this value is multiplied by three, hence the result becomes 30. The test fails because it expected 15.
-The expressiveness of the test is low; it only validates numerical values and it's not clear how the times method affects the object. Moreover, it's difficult to follow each step of the operation chain that the test wants to validate, making it hard to understand what the test is checking.
+Before the five.times(3); call, five.amount was already 10 (after the first times(2) call).
+In the second call, this value is multiplied by three, hence the result becomes 30. 
+The test fails because it expected 15.
+The expressiveness of the test is low; 
+it only validates numerical values and 
+it's not clear how the times method affects the object. 
+Moreover, it's difficult to follow each step of the operation chain 
+that the test wants to validate, 
+making it hard to understand what the test is checking.
 
 2.Second Version
 
@@ -57,8 +64,10 @@ The expressiveness of the test is low; it only validates numerical values and it
 
 Analysis:
 
-The times method now returns a new Dollar object and does not modify the original object. This shows that the method is side-effect free, which is generally a cleaner programming practice.
-The tests are still based on numerical values. assertEquals still checks the amount property, so it's not fully in line with object encapsulation.
+The times method now returns a new Dollar object and does not modify the original object. 
+This shows that the method is side-effect free, which is generally a cleaner programming practice.
+The tests are still based on numerical values. assertEquals still checks the amount property, 
+so it's not fully in line with object encapsulation.
 3. Third Version
 
                 public class Dollar {
@@ -101,7 +110,8 @@ The tests are still based on numerical values. assertEquals still checks the amo
 Analysis:
 
 An equals method has been added, allowing validation based on object equality.
-However, the testMultiplication still relies on amount values for testing. This means it's not fully appropriate for encapsulation and object-oriented approach.
+However, the testMultiplication still relies on amount values for testing. 
+This means it's not fully appropriate for encapsulation and object-oriented approach.
 4. Fourth Version
     
         public class Dollar {
