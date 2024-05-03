@@ -65,3 +65,19 @@ to the reader what the test is checking and what the expected outcomes are.
 Using object comparison makes the tests more "talkative" because it checks the equality of objects, 
 thereby writing a test that is more aligned with the object-oriented programming paradigm 
 and more clearly conveys the purpose of the tests.
+
+###
+
+In this context, the term "speaking" is used to emphasize that 
+tests should be more explanatory and meaningful. 
+Here, "speaking" means 
+that the tests express themselves more clearly, that is, 
+the written test code communicates to the reader what the test is testing 
+and what the expected results are in a clearer language. 
+This indicates that tests should not only perform technical checks 
+but also "speak" more clearly about the operation and rules of the software.
+For example, using assertEquals in tests to compare not just numbers 
+but to verify the equality of Dollar objects using the equals method 
+makes the tests express the expected behaviors in a more meaningful way. 
+Thus, the tests better reflect the design and operational logic of the software 
+and more effectively convey the purpose of the test to those reading the code.
