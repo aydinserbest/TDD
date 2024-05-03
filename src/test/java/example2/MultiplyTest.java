@@ -9,7 +9,10 @@ public class MultiplyTest {
     public void testMultiplication() {
         Dollar five= new Dollar(5);
         five.times(2);
-        assertEquals(10, five.amount); }
+        assertEquals(10, five.amount);
+        //below line will give error
+    five.times(3);
+    assertEquals(15, five.amount);}
 }
 
     /*
