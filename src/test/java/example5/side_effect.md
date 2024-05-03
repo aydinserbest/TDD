@@ -1,3 +1,11 @@
+The times method now returns a new Dollar object and does not modify the original object. 
+This indicates that the method is side-effect-free, 
+which is generally considered a cleaner programming practice. 
+When a method is side-effect-free, it does not alter the state of any data outside its scope 
+or interact with external systems. This approach enhances code predictability, maintainability, 
+and decreases the likelihood of bugs related to shared mutable state, 
+making it a preferred practice in many programming scenarios.
+
 "Side-effect free" refers to a function or method operating 
 without altering the state of the program or affecting any external data. 
 In programming, side-effect-free methods are typically considered cleaner, more predictable, 
