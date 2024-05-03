@@ -7,20 +7,25 @@ import static org.junit.Assert.assertTrue;
 
 public class MultiplyTest {
     @Test
-    public void testMultiplication() {
+    public void testMultiplicationOldVersion() {
 
         Dollar five = new Dollar(5);
-        Dollar product = five.times(2);
-        assertEquals(10, five.times(2));
-       // assertEquals(10, product.amount);
-       // assertEquals(five, product);
-        //assertEquals(new Dollar(5), new Dollar(5));
-//        product = five.times(3);
-//        assertEquals(15, product.amount);
+        Dollar product= five.times(2);
+        assertEquals(10, product.amount);
+        product= five.times(3);
+        assertEquals(15, product.amount);
     }
     @Test
-    public void testEquality() {
-        assertTrue(new Dollar(5).equals(new Dollar(5)));
+    public void testMultiplicationUpdated() {
+        //We can rewrite the assertions to compare Dollars to Dollars:
+        //Now the temporary variable product isn’t helping much, so we can inline it:
+
+
+        Dollar five = new Dollar(5);
+
+        assertEquals(new Dollar(10), five.times(2));
+        assertEquals(new Dollar(15), five.times(3));
     }
+
 }
 
