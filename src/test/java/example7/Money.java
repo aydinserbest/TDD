@@ -12,8 +12,4 @@ public class Money {
         return amount == money.amount;
     }
 }
-    /*
-    the tests technically passed, meaning they did not produce an error,
-    but they did not produce the correct logical results.
-    Thus, the program may run without error, but it does not produce correct logical outcomes
-     */
+
