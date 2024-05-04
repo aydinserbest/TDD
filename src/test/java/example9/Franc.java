@@ -1,16 +1,16 @@
-package example7;
+package example9;
 
-public class Dollar extends Money {
+public class Franc extends Money {
 
-    Dollar(int amount) {
+    Franc(int amount) {
         this.amount = amount;
     }
-
-    Dollar times(int multiplier) {
-        return new Dollar(amount * multiplier);
-    }
-    /*
+    Franc times(int multiplier) {
+        return new Franc(amount * multiplier);
+        /*
         Now there is no difference between Franc.equals() and Money.equals(),
         so we delete the redundant implementation in Franc.
          */
+    }
 }
+
