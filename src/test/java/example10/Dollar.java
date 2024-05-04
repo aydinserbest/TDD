@@ -8,11 +8,11 @@ public class Dollar extends Money {
     }
 
     @Override
-    String currency() {
-        return currency;
+    public String currency() {
+        return "USD";
     }
 
     Money times(int multiplier) {
-        return new Money(amount * multiplier, currency);
+        return Money.dollar(amount * multiplier);
     }
 }

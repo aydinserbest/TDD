@@ -1,7 +1,7 @@
 package example10;
 
 
-public class Money {
+abstract class Money {
 
     protected int amount;
     protected String currency;
@@ -11,13 +11,10 @@ public class Money {
         this.currency = currency;
     }
 
-
-    String currency(){
-         return currency;
-     };
-     Money times(int multiplier){
-         return null;
-     };
+    public String currency(){
+        return currency;
+    };
+     abstract Money times(int multiplier);
 
     static Money dollar(int amount) {
         return new Dollar(amount, "USD");
