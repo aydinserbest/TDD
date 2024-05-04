@@ -1,6 +1,7 @@
 package example10;
 
-abstract class Money {
+
+public class Money {
 
     protected int amount;
     protected String currency;
@@ -32,6 +33,7 @@ abstract class Money {
         return amount == money.amount
         && getClass().equals(money.getClass());
     }
-    public String toString() { return amount + " " + currency; }
+    public String toString() {
+        return amount + " " + currency; }
 
 }
