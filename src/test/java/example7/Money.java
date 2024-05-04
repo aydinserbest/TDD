@@ -13,6 +13,10 @@ public class Money {
         && getClass().equals(money.getClass());
     }
 }
+    /*
+    if getClass() is called on a Dollar object, it returns Dollar.class.
+    Similarly, when getClass() is called on a Franc object, it returns Franc.class.
+     */
 /*
 "i.e., the currencies" is used to clarify that "the classes of the objects" refers specifically
 to the types of currencies represented by those classes.

@@ -16,4 +16,10 @@ public class MultiplyTest {
         assertNotEquals(new Franc(10), new Dollar(10));
     }
 }
+    /*
+    this piece of code is used not only to check the amounts
+    but also whether the currency types (for instance, both being Dollar or both being Franc) are the same.
+    If the two objects belong to the same class,
+    this expression returns true; otherwise, it returns false.
+     */
 
