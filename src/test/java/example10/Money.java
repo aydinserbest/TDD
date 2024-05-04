@@ -1,14 +1,9 @@
-package example9;
+package example10;
 
 abstract class Money {
 
     protected int amount;
 
-    /*
-    We can introduce a factory method in Money that returns a Dollar.
-    Decoupled test code from the existence of concrete subclasses by introducing factory methods
-    implementation creates and returns a Dollar:
-     */
     static Money dollar(int amount) {
         return new Dollar(amount);
     }
