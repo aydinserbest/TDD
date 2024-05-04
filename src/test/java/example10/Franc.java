@@ -3,14 +3,10 @@ package example10;
 public class Franc extends Money {
     private String currency;
 
-    Franc(int amount, String currency) {
-        super(amount, currency);
+    Franc(int amount) {
+        super(amount, "CHF");
     }
 
-    @Override
-    public String currency() {
-        return "CHF";
-    }
 
     Money times(int multiplier) {
 
