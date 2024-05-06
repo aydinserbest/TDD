@@ -1,4 +1,4 @@
-package example10;
+package example11;
 
 
 public class Money {
@@ -6,7 +6,7 @@ public class Money {
     protected int amount;
     protected String currency;
 
-    Money(int amount, String currency) {
+    public Money(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -16,7 +16,7 @@ public class Money {
          return currency;
      };
      Money times(int multiplier){
-         return null;
+         return new Money(amount * multiplier, currency);
      };
 
     static Money dollar(int amount) {
@@ -31,7 +31,7 @@ public class Money {
     public boolean equals(Object object) {
         Money money = (Money) object;
         return amount == money.amount
-        && getClass().equals(money.getClass());
+        && currency().equals(money.currency());
     }
     public String toString() {
         return amount + " " + currency; }
