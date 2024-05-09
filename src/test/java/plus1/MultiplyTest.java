@@ -11,4 +11,17 @@ public class MultiplyTest {
         Money sum = Money.dollar(5).plus(Money.dollar(5));
         assertEquals(Money.dollar(10), sum);
     }
+    @Test
+    public void testSimpleAddition2() {
+        Money sum = Money.dollar(5).plus(Money.franc(5));
+        System.out.println(sum.currency);
+        assertEquals(Money.dollar(10), sum);
+    }
+    @Test
+    public void testSimpleAddition3() {
+        Money sum = Money.franc(5).plus(Money.dollar(5));
+        System.out.println(sum.currency);
+        assertEquals(Money.dollar(10), sum);
+    }
+
 }
