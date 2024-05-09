@@ -41,17 +41,19 @@ However, it emphasizes that the test's failure (red bar) indicates progress in t
 ###
 
 Initial State and the "Fake It" Strategy
-Initially, the Dollar class was initialized with a constant amount value, and the times method didn’t perform any operation. 
+Initially, the Dollar class was initialized with a constant amount value, 
+and the times method didn’t perform any operation. 
 Our first test (testMultiplication) simply tested this constant value. 
-This aligns with the author's "Fake It" strategy, as we started with a temporary solution rather than a real implementation:
+This aligns with the author's "Fake It" strategy, 
+as we started with a temporary solution rather than a real implementation:
 
-public class Dollar {
-int amount = 10;
-Dollar(int amount) {
-}
-void times(int multiplier) {
-}
-}
+    public class Dollar {
+    int amount = 10;
+    Dollar(int amount) {
+    }
+    void times(int multiplier) {
+    }
+    }
 
 The "Obvious Implementation" Strategy and Improvements
 Later, we updated the times method to multiply the amount value by a multiplier. 
@@ -76,15 +78,15 @@ This is an example of how tests can reveal side effects, as the author mentioned
 Our tests demonstrated that the method didn't reflect the expected behavior, 
 prompting us to redesign the times method to eliminate these side effects:
 
-public class Dollar {
-int amount;
-Dollar(int amount) {
-this.amount = amount;
-}
-Dollar times(int multiplier) {
-return new Dollar(this.amount * multiplier);
-}
-}
+    public class Dollar {
+    int amount;
+    Dollar(int amount) {
+    this.amount = amount;
+    }
+    Dollar times(int multiplier) {
+    return new Dollar(this.amount * multiplier);
+    }
+    }
 
 
 Design Discussions and Further Refinements

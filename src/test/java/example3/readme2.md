@@ -2,7 +2,8 @@ Let's walk through how the author's concerns about public fields, side effects, 
 are addressed and transformed throughout the progression of the Dollar class in Chapters 1 and 2:
 
 Public Fields:
-    -Initial State: In the initial implementation, the Dollar class has an amount field defined as a public integer:
+    -Initial State: In the initial implementation, the Dollar class has an amount field 
+defined as a public integer:
 
         public class Dollar {
         int amount = 10;
@@ -14,7 +15,7 @@ as it allows uncontrolled changes to the object's state.
 to initialize amount:
 
         public class Dollar {
-        int amount;
+        private amount;
         Dollar(int amount) {
         this.amount = amount;
         }

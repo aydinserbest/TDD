@@ -12,7 +12,7 @@ public class MultiplyTest {
         assertEquals(10, five.amount);
         /*
         After the first call to times(),
-        five isn’t five any more, it’s really ten.
+        five isn’t five anymore, it’s really ten.
         If, however, we return a new object from times(),
         then we can multiply our original five bucks all day and never have it change.
         We are changing the interface of Dollar when we make this change,
