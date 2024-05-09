@@ -1,4 +1,4 @@
-package example11;
+package plus1;
 
 
 public class Money {
