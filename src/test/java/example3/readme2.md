@@ -15,7 +15,7 @@ as it allows uncontrolled changes to the object's state.
 to initialize amount:
 
         public class Dollar {
-        private amount;
+        int amount;
         Dollar(int amount) {
         this.amount = amount;
         }
