@@ -10,10 +10,11 @@ public class MultiplyTest {
     2. Run all tests and see the new one fail.
      */
     /*
-    multi-currency money
+    Multiply Amount function:
+    there is not Dollar class and methods and variables
+    we only wrote test
      */
-    // there is not Dollar class and methods and variables
-    //we only wrote test
+
     @Test
     public void multiply(){
         Dollar five = new Dollar(5);
