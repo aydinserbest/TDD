@@ -41,3 +41,9 @@ public class Money implements Expression {
         return new Money(amount + addend.amount, currency);
     }
 }
+/*
+before:
+public Money plus(Money addend) {
+    return new Money(amount + addend.amount, currency);
+    }
+ */
